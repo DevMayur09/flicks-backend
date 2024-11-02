@@ -1,0 +1,21 @@
+{
+  "name": "flicks-backend",
+  "version": "1.0.0",
+  "description": "It is video/reel streaming plaform where user Can upload videos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "nodeJs",
+    "Mayur",
+    "Thool"
+  ],
+  "author": "Mayur Thool",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
