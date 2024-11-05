@@ -5,8 +5,9 @@ import jwt from "jsonwebtoken";
 
 export const verifyJWT = asyncHandler(async (req, res, next) => {
   try {
-    const accessToken = req.cookies?.accessToken;
-    console.log("accessToken", accessToken);
+    const accessToken =
+      req.cookies?.accessToken ||
+      req.header("Authorization")?.replace("Bearer", "");
 
     //   req.header("Authorization")?.replace("Bearer", ""); // For mobile application were no cookies
 
